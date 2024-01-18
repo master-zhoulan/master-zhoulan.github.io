@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-01-17T07:45:01.526Z</updated>
+  <updated>2024-01-18T12:04:31.669Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,20 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown语法</title>
+    <link href="http://example.com/2024/01/18/my-first-blog/"/>
+    <id>http://example.com/2024/01/18/my-first-blog/</id>
+    <published>2024-01-18T11:36:33.000Z</published>
+    <updated>2024-01-18T12:04:31.669Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~&lt;/p&gt;
+&lt;h4 id=&quot;（1）标题&quot;&gt;&lt;a href=&quot;#（1）标题&quot; class=&quot;headerlink&quot; title=&quot;（1）标题&quot;&gt;&lt;/a&gt;（1）标题&lt;/h4&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://example.com/2024/01/17/hello-world/"/>
     <id>http://example.com/2024/01/17/hello-world/</id>
     <published>2024-01-17T08:23:04.808Z</published>
-    <updated>2024-01-17T07:45:01.526Z</updated>
+    <updated>2024-01-18T12:03:39.141Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;</summary>
     
     
     
