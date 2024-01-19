@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-01-18T12:11:31.856Z</updated>
+  <updated>2024-01-19T08:37:12.284Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown进阶</title>
+    <link href="http://example.com/2024/01/19/Markdown%E8%BF%9B%E9%98%B6/"/>
+    <id>http://example.com/2024/01/19/Markdown%E8%BF%9B%E9%98%B6/</id>
+    <published>2024-01-19T08:26:58.000Z</published>
+    <updated>2024-01-19T08:37:12.284Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：&lt;br&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Markdown语法</title>
     <link href="http://example.com/2024/01/18/my-first-blog/"/>
     <id>http://example.com/2024/01/18/my-first-blog/</id>
     <published>2024-01-18T11:36:33.000Z</published>
-    <updated>2024-01-18T12:11:31.856Z</updated>
+    <updated>2024-01-19T08:15:30.301Z</updated>
     
     
     <summary type="html">&lt;p&gt;在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~&lt;/p&gt;
