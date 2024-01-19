@@ -31,7 +31,7 @@
   </entry>
   <entry>
     <title>Markdown进阶</title>
-    <url>/2024/01/19/Markdown%E8%BF%9B%E9%98%B6/</url>
+    <url>/2024/01/19/Markdown2/</url>
     <content><![CDATA[<p>好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：<br> <span id="more"></span></p>
 <h4 id="1）模板设置"><a href="#1）模板设置" class="headerlink" title="(1）模板设置"></a>(1）模板设置</h4><p>当我们使用命令hexo new “title” 去创建我们的文章时，Hexo 会根据 &#x2F;scaffolds&#x2F;post.md 文件对新建文件进行初始化，换言之，&#x2F;scaffolds&#x2F;post.md 文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; tiltle &#125;&#125;</span><br><span class="line"><span class="built_in">date</span>: &#123;&#123; <span class="built_in">date</span> &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure>
