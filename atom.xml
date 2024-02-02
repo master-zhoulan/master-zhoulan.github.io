@@ -42,7 +42,7 @@
     <link href="http://example.com/2024/01/18/my-first-blog/"/>
     <id>http://example.com/2024/01/18/my-first-blog/</id>
     <published>2024-01-18T11:36:33.000Z</published>
-    <updated>2024-02-02T08:03:58.523Z</updated>
+    <updated>2024-02-02T08:07:10.572Z</updated>
     
     
     <summary type="html">&lt;p&gt;在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~&lt;/p&gt;
@@ -50,6 +50,12 @@
     
     
     
+    <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
+    
+    
+    <category term="blog" scheme="http://example.com/tags/blog/"/>
+    
+    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
