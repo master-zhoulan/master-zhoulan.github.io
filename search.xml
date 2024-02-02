@@ -28,6 +28,12 @@
 <p>（3）此时使用 hexo new title 创建文章时，将同时在 source&#x2F;_post 文件夹中生成一个与 title 同名的文件夹，我们只需将待添加的图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</p>
 <p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加了图片 example.PNG，则可以在对应的文章中使用语句<img src="/title/example.PNG" alt="示例图片" title="示例图片"> 添加图片</p>
 ]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
   </entry>
   <entry>
     <title>Markdown进阶</title>
@@ -42,6 +48,12 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
 <p>标志，表示只会显示标志前面的内容</p>
 ]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
