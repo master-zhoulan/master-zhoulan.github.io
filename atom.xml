@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-02-02T08:00:55.695Z</updated>
+  <updated>2024-02-02T08:03:58.509Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,36 +17,17 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>HexoNext分类标签</title>
-    <link href="http://example.com/2024/02/02/HexoNext__tag/"/>
-    <id>http://example.com/2024/02/02/HexoNext__tag/</id>
-    <published>2024-02-02T07:56:52.000Z</published>
-    <updated>2024-02-02T08:00:55.695Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Markdown进阶</title>
     <link href="http://example.com/2024/01/19/Markdown2/"/>
     <id>http://example.com/2024/01/19/Markdown2/</id>
     <published>2024-01-19T08:26:58.000Z</published>
-    <updated>2024-02-02T07:54:32.771Z</updated>
+    <updated>2024-02-02T08:03:58.509Z</updated>
     
     
     <summary type="html">&lt;p&gt;好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：&lt;br&gt;</summary>
     
     
     
-    <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
-    
-    
-    <category term="blog" scheme="http://example.com/tags/blog/"/>
-    
-    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
@@ -55,7 +36,7 @@
     <link href="http://example.com/2024/01/18/my-first-blog/"/>
     <id>http://example.com/2024/01/18/my-first-blog/</id>
     <published>2024-01-18T11:36:33.000Z</published>
-    <updated>2024-02-02T07:49:44.738Z</updated>
+    <updated>2024-02-02T08:03:58.523Z</updated>
     
     
     <summary type="html">&lt;p&gt;在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~&lt;/p&gt;
@@ -63,12 +44,6 @@
     
     
     
-    <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
-    
-    
-    <category term="blog" scheme="http://example.com/tags/blog/"/>
-    
-    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
@@ -77,7 +52,7 @@
     <link href="http://example.com/2024/01/17/hello-world/"/>
     <id>http://example.com/2024/01/17/hello-world/</id>
     <published>2024-01-17T08:23:04.808Z</published>
-    <updated>2024-02-02T07:54:32.777Z</updated>
+    <updated>2024-02-02T08:03:58.516Z</updated>
     
     
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
@@ -85,10 +60,6 @@
     
     
     
-    <category term="blog" scheme="http://example.com/categories/blog/"/>
-    
-    
-    <category term="blog" scheme="http://example.com/tags/blog/"/>
     
   </entry>
   

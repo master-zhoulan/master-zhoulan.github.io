@@ -1,90 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Markdown语法</title>
-    <url>/2024/01/18/my-first-blog/</url>
-    <content><![CDATA[<p>在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~</p>
-<h4 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h4><span id="more"></span>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line">1.<span class="comment"># 一级标题</span></span><br><span class="line">2.<span class="comment">## 二级标题</span></span><br><span class="line">3.<span class="comment">### 三级标题</span></span><br><span class="line">4.<span class="comment">#### 四级标题</span></span><br><span class="line">5.<span class="comment">##### 五级标题</span></span><br><span class="line">6.<span class="comment">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-<h4 id="（2）粗体、斜体、删除线和下划线"><a href="#（2）粗体、斜体、删除线和下划线" class="headerlink" title="（2）粗体、斜体、删除线和下划线"></a>（2）粗体、斜体、删除线和下划线</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line"></span><br><span class="line">1.* 斜体 *</span><br><span class="line">2.** 粗体 **</span><br><span class="line">3.*** 加粗斜体 ***</span><br><span class="line">4.~~ 删除线 ~~</span><br></pre></td></tr></table></figure>
-<p>Typora快捷键  </p>
-<blockquote>
-<p>ctrl+b: 粗体</p>
-</blockquote>
-<h4 id="（3）引用快"><a href="#（3）引用快" class="headerlink" title="（3）引用快"></a>（3）引用快</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&gt;&#x27;</span>文字引用</span><br><span class="line">Typora快捷键: ctrl+<span class="built_in">shift</span> +q</span><br></pre></td></tr></table></figure>
-
-<h4 id="（4）代码块"><a href="#（4）代码块" class="headerlink" title="（4）代码块"></a>（4）代码块</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line">1.行内代码</span><br><span class="line">2....</span><br><span class="line">3.多行代码</span><br><span class="line">4.多行代码</span><br><span class="line">5.```</span><br></pre></td></tr></table></figure>
-<h4 id="（5）代码块"><a href="#（5）代码块" class="headerlink" title="（5）代码块"></a>（5）代码块</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">数学公式</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
-<h4 id="（6）分割线"><a href="#（6）分割线" class="headerlink" title="（6）分割线"></a>（6）分割线</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.方法一:</span><br><span class="line">2.方法二:+++</span><br><span class="line">3.方法三:***</span><br><span class="line">使用以上三种方法都可以</span><br></pre></td></tr></table></figure>
-<h4 id="（7）列表"><a href="#（7）列表" class="headerlink" title="（7）列表"></a>（7）列表</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1 有序列表项</span><br><span class="line">*无序列表项</span><br><span class="line">+无序列表项</span><br></pre></td></tr></table></figure>
-
-<h4 id="（8）表格"><a href="#（8）表格" class="headerlink" title="（8）表格"></a>（8）表格</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">表头1|表头2</span><br><span class="line">-|-|-</span><br><span class="line">内容11|内容12</span><br><span class="line">内容21|内容22</span><br></pre></td></tr></table></figure>
-<h4 id="（9）超链接"><a href="#（9）超链接" class="headerlink" title="（9）超链接"></a>（9）超链接</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">方法一:[链接文字](<span class="string">&#x27;链接地址&#x27;</span> <span class="string">&quot;链接描述&quot;</span>)</span><br><span class="line">例如:[我的博客](https://github.com)</span><br><span class="line"></span><br><span class="line">方法二:&lt;链接地址&gt;</span><br><span class="line">例如:&lt;https://github.com&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="（10）超链接"><a href="#（10）超链接" class="headerlink" title="（10）超链接"></a>（10）超链接</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">![图片文字](<span class="string">&#x27;图片地址&#x27;</span> <span class="string">&quot;图片描述&quot;</span>)</span><br><span class="line">例如: ![示例图片](http://www.example.com)</span><br></pre></td></tr></table></figure>
-
-<p>说明：在Hexo中插入图片时，请按照以下步骤进行设置</p>
-<p>（1）将站点配置文件中的 post_asset_folde选项设置成 true</p>
-<p>（2）在站点文件夹中打开 git bash，输入命令 npm install hexo-asset-image –save安装插件</p>
-<p>（3）此时使用 hexo new title 创建文章时，将同时在 source&#x2F;_post 文件夹中生成一个与 title 同名的文件夹，我们只需将待添加的图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</p>
-<p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加了图片 example.PNG，则可以在对应的文章中使用语句<img src="/title/example.PNG" alt="示例图片" title="示例图片"> 添加图片</p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoNext分类标签</title>
-    <url>/2024/02/02/HexoNext__tag/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Markdown进阶</title>
-    <url>/2024/01/19/Markdown2/</url>
-    <content><![CDATA[<p>好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：<br> <span id="more"></span></p>
-<h4 id="1）模板设置"><a href="#1）模板设置" class="headerlink" title="(1）模板设置"></a>(1）模板设置</h4><p>当我们使用命令hexo new “title” 去创建我们的文章时，Hexo 会根据 &#x2F;scaffolds&#x2F;post.md 文件对新建文件进行初始化，换言之，&#x2F;scaffolds&#x2F;post.md 文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; tiltle &#125;&#125;</span><br><span class="line"><span class="built_in">date</span>: &#123;&#123; <span class="built_in">date</span> &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure>
-
-<h4 id="2）头部设置"><a href="#2）头部设置" class="headerlink" title="(2）头部设置"></a>(2）头部设置</h4><p>在每一篇博客文章的开头都会有对文章的说明文字，叫做 文章头部，文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以对文章添加标签、分类等，一个简单的示例如下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: Title</span><br><span class="line"><span class="built_in">date</span>: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tags1, tags2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
-<h4 id="3）首页显示"><a href="#3）首页显示" class="headerlink" title="(3）首页显示"></a>(3）首页显示</h4><p>在 Hexo 框架搭建的博客网站首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>标志，表示只会显示标志前面的内容</p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/01/17/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><span id="more"></span>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Markdown进阶</title>
+      <link href="/2024/01/19/Markdown2/"/>
+      <url>/2024/01/19/Markdown2/</url>
+      
+        <content type="html"><![CDATA[<p>好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：<br> <span id="more"></span></p><h4 id="1）模板设置"><a href="#1）模板设置" class="headerlink" title="(1）模板设置"></a>(1）模板设置</h4><p>当我们使用命令hexo new “title” 去创建我们的文章时，Hexo 会根据 &#x2F;scaffolds&#x2F;post.md 文件对新建文件进行初始化，换言之，&#x2F;scaffolds&#x2F;post.md 文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: &#123;&#123; tiltle &#125;&#125;</span><br><span class="line"><span class="built_in">date</span>: &#123;&#123; <span class="built_in">date</span> &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure><h4 id="2）头部设置"><a href="#2）头部设置" class="headerlink" title="(2）头部设置"></a>(2）头部设置</h4><p>在每一篇博客文章的开头都会有对文章的说明文字，叫做 文章头部，文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以对文章添加标签、分类等，一个简单的示例如下</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: Title</span><br><span class="line"><span class="built_in">date</span>: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tags1, tags2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure><h4 id="3）首页显示"><a href="#3）首页显示" class="headerlink" title="(3）首页显示"></a>(3）首页显示</h4><p>在 Hexo 框架搭建的博客网站首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure><p>标志，表示只会显示标志前面的内容</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown语法</title>
+      <link href="/2024/01/18/my-first-blog/"/>
+      <url>/2024/01/18/my-first-blog/</url>
+      
+        <content type="html"><![CDATA[<p>在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~</p><h4 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h4><span id="more"></span><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line">1.<span class="comment"># 一级标题</span></span><br><span class="line">2.<span class="comment">## 二级标题</span></span><br><span class="line">3.<span class="comment">### 三级标题</span></span><br><span class="line">4.<span class="comment">#### 四级标题</span></span><br><span class="line">5.<span class="comment">##### 五级标题</span></span><br><span class="line">6.<span class="comment">###### 六级标题</span></span><br></pre></td></tr></table></figure><h4 id="（2）粗体、斜体、删除线和下划线"><a href="#（2）粗体、斜体、删除线和下划线" class="headerlink" title="（2）粗体、斜体、删除线和下划线"></a>（2）粗体、斜体、删除线和下划线</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line"></span><br><span class="line">1.* 斜体 *</span><br><span class="line">2.** 粗体 **</span><br><span class="line">3.*** 加粗斜体 ***</span><br><span class="line">4.~~ 删除线 ~~</span><br></pre></td></tr></table></figure><p>Typora快捷键  </p><blockquote><p>ctrl+b: 粗体</p></blockquote><h4 id="（3）引用快"><a href="#（3）引用快" class="headerlink" title="（3）引用快"></a>（3）引用快</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&gt;&#x27;</span>文字引用</span><br><span class="line">Typora快捷键: ctrl+<span class="built_in">shift</span> +q</span><br></pre></td></tr></table></figure><h4 id="（4）代码块"><a href="#（4）代码块" class="headerlink" title="（4）代码块"></a>（4）代码块</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line">1.行内代码</span><br><span class="line">2....</span><br><span class="line">3.多行代码</span><br><span class="line">4.多行代码</span><br><span class="line">5.```</span><br></pre></td></tr></table></figure><h4 id="（5）代码块"><a href="#（5）代码块" class="headerlink" title="（5）代码块"></a>（5）代码块</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">数学公式</span><br><span class="line">$$</span><br></pre></td></tr></table></figure><h4 id="（6）分割线"><a href="#（6）分割线" class="headerlink" title="（6）分割线"></a>（6）分割线</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.方法一:</span><br><span class="line">2.方法二:+++</span><br><span class="line">3.方法三:***</span><br><span class="line">使用以上三种方法都可以</span><br></pre></td></tr></table></figure><h4 id="（7）列表"><a href="#（7）列表" class="headerlink" title="（7）列表"></a>（7）列表</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 有序列表项</span><br><span class="line">*无序列表项</span><br><span class="line">+无序列表项</span><br></pre></td></tr></table></figure><h4 id="（8）表格"><a href="#（8）表格" class="headerlink" title="（8）表格"></a>（8）表格</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">表头1|表头2</span><br><span class="line">-|-|-</span><br><span class="line">内容11|内容12</span><br><span class="line">内容21|内容22</span><br></pre></td></tr></table></figure><h4 id="（9）超链接"><a href="#（9）超链接" class="headerlink" title="（9）超链接"></a>（9）超链接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">方法一:[链接文字](<span class="string">&#x27;链接地址&#x27;</span> <span class="string">&quot;链接描述&quot;</span>)</span><br><span class="line">例如:[我的博客](https://github.com)</span><br><span class="line"></span><br><span class="line">方法二:&lt;链接地址&gt;</span><br><span class="line">例如:&lt;https://github.com&gt;</span><br></pre></td></tr></table></figure><h4 id="（10）超链接"><a href="#（10）超链接" class="headerlink" title="（10）超链接"></a>（10）超链接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![图片文字](<span class="string">&#x27;图片地址&#x27;</span> <span class="string">&quot;图片描述&quot;</span>)</span><br><span class="line">例如: ![示例图片](http://www.example.com)</span><br></pre></td></tr></table></figure><p>说明：在Hexo中插入图片时，请按照以下步骤进行设置</p><p>（1）将站点配置文件中的 post_asset_folde选项设置成 true</p><p>（2）在站点文件夹中打开 git bash，输入命令 npm install hexo-asset-image –save安装插件</p><p>（3）此时使用 hexo new title 创建文章时，将同时在 source&#x2F;_post 文件夹中生成一个与 title 同名的文件夹，我们只需将待添加的图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</p><p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加了图片 example.PNG，则可以在对应的文章中使用语句<img src="/title/example.PNG" alt="示例图片" title="示例图片"> 添加图片</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/01/17/hello-world/"/>
+      <url>/2024/01/17/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><span id="more"></span><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
