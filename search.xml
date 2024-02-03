@@ -40,7 +40,7 @@
     <title>HexoNext分类标签</title>
     <url>/2024/02/02/HexoNext%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</url>
     <content><![CDATA[<p>HexoNext主题下分类标签：博客功能模块的增加</p>
-<h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:</p>
+<h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:<br> <span id="more"></span></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim themes/next/_config.yml</span></span><br><span class="line">// 删除前面的注释即代表启用</span><br><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类:"></a>文章分类:</h4><p>进入刚刚生成的index.md:</p>

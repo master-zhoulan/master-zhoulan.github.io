@@ -313,10 +313,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-02-02 16:17:30 / 修改时间：16:25:46" itemprop="dateCreated datePublished" datetime="2024-02-02T16:17:30+08:00">2024-02-02</time>
+              <time title="创建时间：2024-02-02 16:17:30" itemprop="dateCreated datePublished" datetime="2024-02-02T16:17:30+08:00">2024-02-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-02-03 09:25:12" itemprop="dateModified" datetime="2024-02-03T09:25:12+08:00">2024-02-03</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -353,22 +359,15 @@
 
       
           <p>HexoNext主题下分类标签：博客功能模块的增加</p>
-<h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim themes/next/_config.yml</span></span><br><span class="line">// 删除前面的注释即代表启用</span><br><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类:"></a>文章分类:</h4><p>进入刚刚生成的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/categories/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">title: categories</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>进入需要分类的文章的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 增加categories属性为Web</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags:</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h4 id="文章标签"><a href="#文章标签" class="headerlink" title="文章标签:"></a>文章标签:</h4><p>进入刚刚生成的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/tags/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>进入需要贴标签文章的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 将tags的属性为设置为Blog</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags: Blog</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h4 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面:"></a>关于页面:</h4><p>直接进入index.md编辑即可：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/about/index.md</span></span><br><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:19:30</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt; 如果再也不能见到你，祝你早安，午安，晚安。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QQ：1903585323</span><br><span class="line"></span><br><span class="line">E-mail：[1903585323@qq.com](1903585323@qq.com)</span><br><span class="line"></span><br><span class="line">个人博客：[https://master-zhoulan.github.io/](https://master-zhoulan.github.io/)</span><br><span class="line"></span><br><span class="line">CSDN：[https://i.csdn.net/<span class="comment">#/user-center/profile](https://i.csdn.net/#/user-center/profile)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:<br>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/02/02/HexoNext%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
