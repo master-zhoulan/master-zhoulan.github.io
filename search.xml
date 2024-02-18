@@ -1,128 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Markdown语法</title>
-    <url>/2022/01/18/my-first-blog/</url>
-    <content><![CDATA[<p>在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~</p>
-<h4 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h4><span id="more"></span>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line">1.<span class="comment"># 一级标题</span></span><br><span class="line">2.<span class="comment">## 二级标题</span></span><br><span class="line">3.<span class="comment">### 三级标题</span></span><br><span class="line">4.<span class="comment">#### 四级标题</span></span><br><span class="line">5.<span class="comment">##### 五级标题</span></span><br><span class="line">6.<span class="comment">###### 六级标题</span></span><br></pre></td></tr></table></figure>
-<h4 id="（2）粗体、斜体、删除线和下划线"><a href="#（2）粗体、斜体、删除线和下划线" class="headerlink" title="（2）粗体、斜体、删除线和下划线"></a>（2）粗体、斜体、删除线和下划线</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line"></span><br><span class="line">1.* 斜体 *</span><br><span class="line">2.** 粗体 **</span><br><span class="line">3.*** 加粗斜体 ***</span><br><span class="line">4.~~ 删除线 ~~</span><br></pre></td></tr></table></figure>
-<p>Typora快捷键  </p>
-<blockquote>
-<p>ctrl+b: 粗体</p>
-</blockquote>
-<h4 id="（3）引用快"><a href="#（3）引用快" class="headerlink" title="（3）引用快"></a>（3）引用快</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&gt;&#x27;</span>文字引用</span><br><span class="line">Typora快捷键: ctrl+<span class="built_in">shift</span> +q</span><br></pre></td></tr></table></figure>
-
-<h4 id="（4）代码块"><a href="#（4）代码块" class="headerlink" title="（4）代码块"></a>（4）代码块</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line">1.行内代码</span><br><span class="line">2....</span><br><span class="line">3.多行代码</span><br><span class="line">4.多行代码</span><br><span class="line">5.```</span><br></pre></td></tr></table></figure>
-<h4 id="（5）代码块"><a href="#（5）代码块" class="headerlink" title="（5）代码块"></a>（5）代码块</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$$</span><br><span class="line">数学公式</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
-<h4 id="（6）分割线"><a href="#（6）分割线" class="headerlink" title="（6）分割线"></a>（6）分割线</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1.方法一:</span><br><span class="line">2.方法二:+++</span><br><span class="line">3.方法三:***</span><br><span class="line">使用以上三种方法都可以</span><br></pre></td></tr></table></figure>
-<h4 id="（7）列表"><a href="#（7）列表" class="headerlink" title="（7）列表"></a>（7）列表</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">1 有序列表项</span><br><span class="line">*无序列表项</span><br><span class="line">+无序列表项</span><br></pre></td></tr></table></figure>
-
-<h4 id="（8）表格"><a href="#（8）表格" class="headerlink" title="（8）表格"></a>（8）表格</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">表头1|表头2</span><br><span class="line">-|-|-</span><br><span class="line">内容11|内容12</span><br><span class="line">内容21|内容22</span><br></pre></td></tr></table></figure>
-<h4 id="（9）超链接"><a href="#（9）超链接" class="headerlink" title="（9）超链接"></a>（9）超链接</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">方法一:[链接文字](<span class="string">&#x27;链接地址&#x27;</span> <span class="string">&quot;链接描述&quot;</span>)</span><br><span class="line">例如:[我的博客](https://github.com)</span><br><span class="line"></span><br><span class="line">方法二:&lt;链接地址&gt;</span><br><span class="line">例如:&lt;https://github.com&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="（10）超链接"><a href="#（10）超链接" class="headerlink" title="（10）超链接"></a>（10）超链接</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">![图片文字](<span class="string">&#x27;图片地址&#x27;</span> <span class="string">&quot;图片描述&quot;</span>)</span><br><span class="line">例如: ![示例图片](http://www.example.com)</span><br></pre></td></tr></table></figure>
-
-<p>说明：在Hexo中插入图片时，请按照以下步骤进行设置</p>
-<p>（1）将站点配置文件中的 post_asset_folde选项设置成 true</p>
-<p>（2）在站点文件夹中打开 git bash，输入命令 npm install hexo-asset-image –save安装插件</p>
-<p>（3）此时使用 hexo new title 创建文章时，将同时在 source&#x2F;_post 文件夹中生成一个与 title 同名的文件夹，我们只需将待添加的图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</p>
-<p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加了图片 example.PNG，则可以在对应的文章中使用语句<img src="/title/example.PNG" alt="示例图片" title="示例图片"> 添加图片</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/01/17/hello-world/"/>
+      <url>/2024/01/17/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><span id="more"></span><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
       <categories>
-        <category>Markdown</category>
+          
+          <category> blog </category>
+          
       </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/01/17/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><span id="more"></span>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>滑动窗口</title>
+      <link href="/2022/02/18/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+      <url>/2022/02/18/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</url>
+      
+        <content type="html"><![CDATA[<p>题目:<br> <span id="more"></span></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">给定一个大小为 n&lt;=106的数组</span><br><span class="line"></span><br><span class="line">有一个大小为 k的滑动窗口,它从数组的最左边移动到最右边</span><br><span class="line"></span><br><span class="line">你只能在窗口中看到 k个数字</span><br><span class="line"></span><br><span class="line">每次滑动窗口向右移动一个位置</span><br><span class="line"></span><br><span class="line">以下是一个例子:</span><br><span class="line"></span><br><span class="line">该数组为 [1 3 -1 -3 5 3 6 7],k为 3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">窗口位置最小值最大值</span><br><span class="line">[1 3 -1] -3 5 3 6 7-13</span><br><span class="line">1 [3 -1 -3] 5 3 6 7-33</span><br><span class="line">1 3 [-1 -3 5] 3 6 7-35</span><br><span class="line">1 3 -1 [-3 5 3] 6 7-35</span><br><span class="line">1 3 -1 -3 [5 3 6] 736</span><br><span class="line">1 3 -1 -3 5 [3 6 7]37</span><br><span class="line">你的任务是确定滑动窗口位于每个位置时,窗口中的最大值和最小值。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">输入包含两行.</span><br><span class="line"></span><br><span class="line">第一行包含两个整数 n和 k</span><br><span class="line">,分别代表数组长度和滑动窗口的长度</span><br><span class="line"></span><br><span class="line">第二行有 n个整数,代表数组的具体数值</span><br><span class="line"></span><br><span class="line">同行数据之间用空格隔开</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">输出包含两个</span><br><span class="line"></span><br><span class="line">第一行输出,从左至右,每个位置滑动窗口中的最小值</span><br><span class="line"></span><br><span class="line">第二行输出,从左至右,每个位置滑动窗口中的最大值</span><br><span class="line"></span><br><span class="line">输入样例:</span><br><span class="line">8 3</span><br><span class="line">1 3 -1 -3 5 3 6 7</span><br><span class="line">输出样例:</span><br><span class="line">-1 -3 -3 -3 3 3</span><br><span class="line">3 3 5 5 6 7</span><br></pre></td></tr></table></figure><p>C++代码:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># include &lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">const int N = 1000010;</span><br><span class="line">int a[N], q[N], hh, tt = -1;</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int n, k;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; k;</span><br><span class="line">    <span class="keyword">for</span> (int i = 0; i &lt; n; ++ i)</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line">        <span class="keyword">if</span> (i - k + 1 &gt; q[hh]) ++ hh;                  // 若队首出窗口，hh加1</span><br><span class="line">        <span class="keyword">while</span> (hh &lt;= tt &amp;&amp; a[i] &lt;= a[q[tt]]) -- tt;    // 若队尾不单调，tt减1</span><br><span class="line">        q[++ tt] = i;                                  // 下标加到队尾</span><br><span class="line">        <span class="keyword">if</span> (i + 1 &gt;= k) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, a[q[hh]]);       // 输出结果</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">endl;</span></span><br><span class="line"><span class="string">    hh = 0; tt = -1;                                   // 重置！</span></span><br><span class="line"><span class="string">    for (int i = 0; i &lt; n; ++ i)</span></span><br><span class="line"><span class="string">    &#123;</span></span><br><span class="line"><span class="string">        if (i - k + 1 &gt; q[hh]) ++ hh;</span></span><br><span class="line"><span class="string">        while (hh &lt;= tt &amp;&amp; a[i] &gt;= a[q[tt]]) -- tt;</span></span><br><span class="line"><span class="string">        q[++ tt] = i;</span></span><br><span class="line"><span class="string">        if (i + 1 &gt;= k) printf(&quot;%d &quot;, a[q[hh]]);</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    return 0;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>blog</category>
+          
+          <category> 算法 </category>
+          
       </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>滑动窗口</title>
-    <url>/2022/02/18/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/</url>
-    <content><![CDATA[<p>题目:<br> <span id="more"></span></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">给定一个大小为 n&lt;=106的数组</span><br><span class="line"></span><br><span class="line">有一个大小为 k的滑动窗口,它从数组的最左边移动到最右边</span><br><span class="line"></span><br><span class="line">你只能在窗口中看到 k个数字</span><br><span class="line"></span><br><span class="line">每次滑动窗口向右移动一个位置</span><br><span class="line"></span><br><span class="line">以下是一个例子:</span><br><span class="line"></span><br><span class="line">该数组为 [1 3 -1 -3 5 3 6 7],k为 3</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">窗口位置	最小值	最大值</span><br><span class="line">[1 3 -1] -3 5 3 6 7	-1	3</span><br><span class="line">1 [3 -1 -3] 5 3 6 7	-3	3</span><br><span class="line">1 3 [-1 -3 5] 3 6 7	-3	5</span><br><span class="line">1 3 -1 [-3 5 3] 6 7	-3	5</span><br><span class="line">1 3 -1 -3 [5 3 6] 7	3	6</span><br><span class="line">1 3 -1 -3 5 [3 6 7]	3	7</span><br><span class="line">你的任务是确定滑动窗口位于每个位置时,窗口中的最大值和最小值。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">输入包含两行.</span><br><span class="line"></span><br><span class="line">第一行包含两个整数 n和 k</span><br><span class="line">,分别代表数组长度和滑动窗口的长度</span><br><span class="line"></span><br><span class="line">第二行有 n个整数,代表数组的具体数值</span><br><span class="line"></span><br><span class="line">同行数据之间用空格隔开</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">输出包含两个</span><br><span class="line"></span><br><span class="line">第一行输出,从左至右,每个位置滑动窗口中的最小值</span><br><span class="line"></span><br><span class="line">第二行输出,从左至右,每个位置滑动窗口中的最大值</span><br><span class="line"></span><br><span class="line">输入样例:</span><br><span class="line">8 3</span><br><span class="line">1 3 -1 -3 5 3 6 7</span><br><span class="line">输出样例:</span><br><span class="line">-1 -3 -3 -3 3 3</span><br><span class="line">3 3 5 5 6 7</span><br></pre></td></tr></table></figure>
-<p>C++代码:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># include &lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">const int N = 1000010;</span><br><span class="line">int a[N], q[N], hh, tt = -1;</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int n, k;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; k;</span><br><span class="line">    <span class="keyword">for</span> (int i = 0; i &lt; n; ++ i)</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(<span class="string">&quot;%d&quot;</span>, &amp;a[i]);</span><br><span class="line">        <span class="keyword">if</span> (i - k + 1 &gt; q[hh]) ++ hh;                  // 若队首出窗口，hh加1</span><br><span class="line">        <span class="keyword">while</span> (hh &lt;= tt &amp;&amp; a[i] &lt;= a[q[tt]]) -- tt;    // 若队尾不单调，tt减1</span><br><span class="line">        q[++ tt] = i;                                  // 下标加到队尾</span><br><span class="line">        <span class="keyword">if</span> (i + 1 &gt;= k) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, a[q[hh]]);       // 输出结果</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; <span class="string">endl;</span></span><br><span class="line"><span class="string">    hh = 0; tt = -1;                                   // 重置！</span></span><br><span class="line"><span class="string">    for (int i = 0; i &lt; n; ++ i)</span></span><br><span class="line"><span class="string">    &#123;</span></span><br><span class="line"><span class="string">        if (i - k + 1 &gt; q[hh]) ++ hh;</span></span><br><span class="line"><span class="string">        while (hh &lt;= tt &amp;&amp; a[i] &gt;= a[q[tt]]) -- tt;</span></span><br><span class="line"><span class="string">        q[++ tt] = i;</span></span><br><span class="line"><span class="string">        if (i + 1 &gt;= k) printf(&quot;%d &quot;, a[q[hh]]);</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    return 0;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> 单调队列 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HexoNext分类标签</title>
+      <link href="/2022/02/02/HexoNext%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/"/>
+      <url>/2022/02/02/HexoNext%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</url>
+      
+        <content type="html"><![CDATA[<p>HexoNext主题下分类标签：博客功能模块的增加</p><h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:<br> <span id="more"></span></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim themes/next/_config.yml</span></span><br><span class="line">// 删除前面的注释即代表启用</span><br><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure><h4 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类:"></a>文章分类:</h4><p>进入刚刚生成的index.md:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/categories/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">title: categories</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>进入需要分类的文章的index.md:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 增加categories属性为Web</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags:</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h4 id="文章标签"><a href="#文章标签" class="headerlink" title="文章标签:"></a>文章标签:</h4><p>进入刚刚生成的index.md:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/tags/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>进入需要贴标签文章的index.md:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 将tags的属性为设置为Blog</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags: Blog</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h4 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面:"></a>关于页面:</h4><p>直接进入index.md编辑即可：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># vim source/about/index.md</span></span><br><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:19:30</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt; 如果再也不能见到你，祝你早安，午安，晚安。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QQ：1903585323</span><br><span class="line"></span><br><span class="line">E-mail：[1903585323@qq.com](1903585323@qq.com)</span><br><span class="line"></span><br><span class="line">个人博客：[https://master-zhoulan.github.io/](https://master-zhoulan.github.io/)</span><br><span class="line"></span><br><span class="line">CSDN：[https://i.csdn.net/<span class="comment">#/user-center/profile](https://i.csdn.net/#/user-center/profile)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>算法</category>
+          
+          <category> hexo </category>
+          
       </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>单调队列</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HexoNext分类标签</title>
-    <url>/2022/02/02/HexoNext%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>HexoNext主题下分类标签：博客功能模块的增加</p>
-<h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:<br> <span id="more"></span></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim themes/next/_config.yml</span></span><br><span class="line">// 删除前面的注释即代表启用</span><br><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类:"></a>文章分类:</h4><p>进入刚刚生成的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/categories/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">title: categories</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>进入需要分类的文章的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 增加categories属性为Web</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags:</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h4 id="文章标签"><a href="#文章标签" class="headerlink" title="文章标签:"></a>文章标签:</h4><p>进入刚刚生成的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/tags/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>进入需要贴标签文章的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 将tags的属性为设置为Blog</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags: Blog</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h4 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面:"></a>关于页面:</h4><p>直接进入index.md编辑即可：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/about/index.md</span></span><br><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:19:30</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt; 如果再也不能见到你，祝你早安，午安，晚安。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QQ：1903585323</span><br><span class="line"></span><br><span class="line">E-mail：[1903585323@qq.com](1903585323@qq.com)</span><br><span class="line"></span><br><span class="line">个人博客：[https://master-zhoulan.github.io/](https://master-zhoulan.github.io/)</span><br><span class="line"></span><br><span class="line">CSDN：[https://i.csdn.net/<span class="comment">#/user-center/profile](https://i.csdn.net/#/user-center/profile)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown进阶</title>
+      <link href="/2022/01/19/Markdown2/"/>
+      <url>/2022/01/19/Markdown2/</url>
+      
+        <content type="html"><![CDATA[<p>好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：<br> <span id="more"></span></p><h4 id="1）模板设置"><a href="#1）模板设置" class="headerlink" title="(1）模板设置"></a>(1）模板设置</h4><p>当我们使用命令hexo new “title” 去创建我们的文章时，Hexo 会根据 &#x2F;scaffolds&#x2F;post.md 文件对新建文件进行初始化，换言之，&#x2F;scaffolds&#x2F;post.md 文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: &#123;&#123; tiltle &#125;&#125;</span><br><span class="line"><span class="built_in">date</span>: &#123;&#123; <span class="built_in">date</span> &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure><h4 id="2）头部设置"><a href="#2）头部设置" class="headerlink" title="(2）头部设置"></a>(2）头部设置</h4><p>在每一篇博客文章的开头都会有对文章的说明文字，叫做 文章头部，文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以对文章添加标签、分类等，一个简单的示例如下</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: Title</span><br><span class="line"><span class="built_in">date</span>: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tags1, tags2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure><h4 id="3）首页显示"><a href="#3）首页显示" class="headerlink" title="(3）首页显示"></a>(3）首页显示</h4><p>在 Hexo 框架搭建的博客网站首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure><p>标志，表示只会显示标志前面的内容</p>]]></content>
+      
+      
       <categories>
-        <category>hexo</category>
+          
+          <category> Markdown </category>
+          
       </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown进阶</title>
-    <url>/2022/01/19/Markdown2/</url>
-    <content><![CDATA[<p>好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：<br> <span id="more"></span></p>
-<h4 id="1）模板设置"><a href="#1）模板设置" class="headerlink" title="(1）模板设置"></a>(1）模板设置</h4><p>当我们使用命令hexo new “title” 去创建我们的文章时，Hexo 会根据 &#x2F;scaffolds&#x2F;post.md 文件对新建文件进行初始化，换言之，&#x2F;scaffolds&#x2F;post.md 文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; tiltle &#125;&#125;</span><br><span class="line"><span class="built_in">date</span>: &#123;&#123; <span class="built_in">date</span> &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure>
-
-<h4 id="2）头部设置"><a href="#2）头部设置" class="headerlink" title="(2）头部设置"></a>(2）头部设置</h4><p>在每一篇博客文章的开头都会有对文章的说明文字，叫做 文章头部，文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以对文章添加标签、分类等，一个简单的示例如下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: Title</span><br><span class="line"><span class="built_in">date</span>: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tags1, tags2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
-<h4 id="3）首页显示"><a href="#3）首页显示" class="headerlink" title="(3）首页显示"></a>(3）首页显示</h4><p>在 Hexo 框架搭建的博客网站首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>标志，表示只会显示标志前面的内容</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown语法</title>
+      <link href="/2022/01/18/my-first-blog/"/>
+      <url>/2022/01/18/my-first-blog/</url>
+      
+        <content type="html"><![CDATA[<p>在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~</p><h4 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h4><span id="more"></span><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line">1.<span class="comment"># 一级标题</span></span><br><span class="line">2.<span class="comment">## 二级标题</span></span><br><span class="line">3.<span class="comment">### 三级标题</span></span><br><span class="line">4.<span class="comment">#### 四级标题</span></span><br><span class="line">5.<span class="comment">##### 五级标题</span></span><br><span class="line">6.<span class="comment">###### 六级标题</span></span><br></pre></td></tr></table></figure><h4 id="（2）粗体、斜体、删除线和下划线"><a href="#（2）粗体、斜体、删除线和下划线" class="headerlink" title="（2）粗体、斜体、删除线和下划线"></a>（2）粗体、斜体、删除线和下划线</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line"></span><br><span class="line">1.* 斜体 *</span><br><span class="line">2.** 粗体 **</span><br><span class="line">3.*** 加粗斜体 ***</span><br><span class="line">4.~~ 删除线 ~~</span><br></pre></td></tr></table></figure><p>Typora快捷键  </p><blockquote><p>ctrl+b: 粗体</p></blockquote><h4 id="（3）引用快"><a href="#（3）引用快" class="headerlink" title="（3）引用快"></a>（3）引用快</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Markdown 语法:</span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&gt;&#x27;</span>文字引用</span><br><span class="line">Typora快捷键: ctrl+<span class="built_in">shift</span> +q</span><br></pre></td></tr></table></figure><h4 id="（4）代码块"><a href="#（4）代码块" class="headerlink" title="（4）代码块"></a>（4）代码块</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Markdown语法:</span><br><span class="line">1.行内代码</span><br><span class="line">2....</span><br><span class="line">3.多行代码</span><br><span class="line">4.多行代码</span><br><span class="line">5.```</span><br></pre></td></tr></table></figure><h4 id="（5）代码块"><a href="#（5）代码块" class="headerlink" title="（5）代码块"></a>（5）代码块</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">数学公式</span><br><span class="line">$$</span><br></pre></td></tr></table></figure><h4 id="（6）分割线"><a href="#（6）分割线" class="headerlink" title="（6）分割线"></a>（6）分割线</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.方法一:</span><br><span class="line">2.方法二:+++</span><br><span class="line">3.方法三:***</span><br><span class="line">使用以上三种方法都可以</span><br></pre></td></tr></table></figure><h4 id="（7）列表"><a href="#（7）列表" class="headerlink" title="（7）列表"></a>（7）列表</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 有序列表项</span><br><span class="line">*无序列表项</span><br><span class="line">+无序列表项</span><br></pre></td></tr></table></figure><h4 id="（8）表格"><a href="#（8）表格" class="headerlink" title="（8）表格"></a>（8）表格</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">表头1|表头2</span><br><span class="line">-|-|-</span><br><span class="line">内容11|内容12</span><br><span class="line">内容21|内容22</span><br></pre></td></tr></table></figure><h4 id="（9）超链接"><a href="#（9）超链接" class="headerlink" title="（9）超链接"></a>（9）超链接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">方法一:[链接文字](<span class="string">&#x27;链接地址&#x27;</span> <span class="string">&quot;链接描述&quot;</span>)</span><br><span class="line">例如:[我的博客](https://github.com)</span><br><span class="line"></span><br><span class="line">方法二:&lt;链接地址&gt;</span><br><span class="line">例如:&lt;https://github.com&gt;</span><br></pre></td></tr></table></figure><h4 id="（10）超链接"><a href="#（10）超链接" class="headerlink" title="（10）超链接"></a>（10）超链接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![图片文字](<span class="string">&#x27;图片地址&#x27;</span> <span class="string">&quot;图片描述&quot;</span>)</span><br><span class="line">例如: ![示例图片](http://www.example.com)</span><br></pre></td></tr></table></figure><p>说明：在Hexo中插入图片时，请按照以下步骤进行设置</p><p>（1）将站点配置文件中的 post_asset_folde选项设置成 true</p><p>（2）在站点文件夹中打开 git bash，输入命令 npm install hexo-asset-image –save安装插件</p><p>（3）此时使用 hexo new title 创建文章时，将同时在 source&#x2F;_post 文件夹中生成一个与 title 同名的文件夹，我们只需将待添加的图片放进此文件夹中，然后在文章中通过 Markdown 语法进行引用即可</p><p>例如，在资源文件夹（就是那个与 title 同名的文件夹）中添加了图片 example.PNG，则可以在对应的文章中使用语句<img src="/title/example.PNG" alt="示例图片" title="示例图片"> 添加图片</p>]]></content>
+      
+      
       <categories>
-        <category>Markdown</category>
+          
+          <category> Markdown </category>
+          
       </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
