@@ -29,6 +29,60 @@
     
     
     <entry>
+      <title>最大异或对</title>
+      <link href="/2022/02/21/%E6%9C%80%E5%A4%A7%E5%BC%82%E6%88%96%E5%AF%B9/"/>
+      <url>/2022/02/21/%E6%9C%80%E5%A4%A7%E5%BC%82%E6%88%96%E5%AF%B9/</url>
+      
+        <content type="html"><![CDATA[<p>题目：最大异或对<br> <span id="more"></span></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">在给定的 N</span><br><span class="line"> 个整数 A1，A2……AN</span><br><span class="line"> 中选出两个进行 xor</span><br><span class="line">（异或）运算，得到的结果最大是多少？</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行输入一个整数 N</span><br><span class="line"></span><br><span class="line">第二行输入 N个整数 A1～AN</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">输出一个整数表示答案。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤N≤105</span><br><span class="line">0≤Ai&lt;231</span><br><span class="line">输入样例：</span><br><span class="line">3</span><br><span class="line">1 2 3</span><br><span class="line">输出样例：</span><br><span class="line">3</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> Trie </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Trie字符串统计</title>
+      <link href="/2022/02/20/Trie%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/"/>
+      <url>/2022/02/20/Trie%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<p>题目<br>Trie字符串统计<br> <span id="more"></span></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">维护一个字符串集合，支持两种操作：</span><br><span class="line"></span><br><span class="line">I x 向集合中插入一个字符串 x</span><br><span class="line">；</span><br><span class="line">Q x 询问一个字符串在集合中出现了多少次。</span><br><span class="line">共有 N</span><br><span class="line">个操作，所有输入的字符串总长度不超过 105</span><br><span class="line">，字符串仅包含小写英文字母。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行包含整数 N</span><br><span class="line">，表示操作数。</span><br><span class="line"></span><br><span class="line">接下来 N</span><br><span class="line">行，每行包含一个操作指令，指令为 I x 或 Q x 中的一种。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">对于每个询问指令 Q x，都要输出一个整数作为结果，表示 x</span><br><span class="line">在集合中出现的次数。</span><br><span class="line"></span><br><span class="line">每个结果占一行。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line"></span><br><span class="line">1≤N≤2∗104</span><br><span class="line"></span><br><span class="line">输入样例：</span><br><span class="line"></span><br><span class="line">5</span><br><span class="line">I abc</span><br><span class="line">Q abc</span><br><span class="line">Q ab</span><br><span class="line">I ab</span><br><span class="line">Q ab</span><br><span class="line"></span><br><span class="line">输出样例：</span><br><span class="line">1</span><br><span class="line">0</span><br><span class="line">1</span><br></pre></td></tr></table></figure><p>题解</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">const int N = 100010;</span><br><span class="line">int son[N][26],cnt[N],idx;//cnt表示出现的次数 idx是trie的节点</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">char str[N];</span><br><span class="line"></span><br><span class="line">void insert(char str[])</span><br><span class="line">&#123;</span><br><span class="line">    int p = 0;</span><br><span class="line">    <span class="keyword">for</span>(int i = 0;str[i];i++)</span><br><span class="line">    &#123;</span><br><span class="line">        int u = str[i] - <span class="string">&#x27;a&#x27;</span>; </span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) son[p][u] = ++idx;  //没有该子结点就创建一个</span><br><span class="line">        p = son[p][u]; //走到p的子结点，理解为链表指向下一个节点</span><br><span class="line">    &#125;</span><br><span class="line">    cnt[p]++;</span><br><span class="line">&#125;</span><br><span class="line">//重新遍历一遍 如果路径不通就返回0</span><br><span class="line">int query(char str[])</span><br><span class="line">&#123;</span><br><span class="line">    int p = 0;</span><br><span class="line">    <span class="keyword">for</span>(int i = 0;str[i];i++)</span><br><span class="line">    &#123;</span><br><span class="line">        int u = str[i] - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) <span class="built_in">return</span> 0;</span><br><span class="line">        p = son[p][u];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> cnt[p];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">while</span>(n--)</span><br><span class="line">    &#123;</span><br><span class="line">        char op[2];</span><br><span class="line">        scanf(<span class="string">&quot;%s%s&quot;</span>,op,str);</span><br><span class="line">        <span class="keyword">if</span>(op[0] == <span class="string">&#x27;I&#x27;</span>) insert(str);</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,query(str));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C++ </tag>
+            
+            <tag> Trie </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>KMP</title>
       <link href="/2022/02/19/KMP/"/>
       <url>/2022/02/19/KMP/</url>
@@ -126,9 +180,9 @@
       
         <tags>
             
-            <tag> blog </tag>
-            
             <tag> Markdown </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
@@ -153,9 +207,9 @@
       
         <tags>
             
-            <tag> blog </tag>
-            
             <tag> Markdown </tag>
+            
+            <tag> blog </tag>
             
         </tags>
       
