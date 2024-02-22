@@ -37,6 +37,27 @@
   </entry>
   
   <entry>
+    <title>最大异或对</title>
+    <link href="http://example.com/2022/02/21/%E6%9C%80%E5%A4%A7%E5%BC%82%E6%88%96%E5%AF%B9/"/>
+    <id>http://example.com/2022/02/21/%E6%9C%80%E5%A4%A7%E5%BC%82%E6%88%96%E5%AF%B9/</id>
+    <published>2022-02-21T01:01:27.000Z</published>
+    <updated>2024-02-22T07:28:53.093Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;题目：最大异或对&lt;br&gt;</summary>
+    
+    
+    
+    <category term="算法" scheme="http://example.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="C++" scheme="http://example.com/tags/C/"/>
+    
+    <category term="Trie" scheme="http://example.com/tags/Trie/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Trie字符串统计</title>
     <link href="http://example.com/2022/02/20/Trie%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/"/>
     <id>http://example.com/2022/02/20/Trie%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/</id>
