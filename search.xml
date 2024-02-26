@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HexoNext分类标签</title>
+    <url>/2022/02/02/HexoNext%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<p>HexoNext主题下分类标签：博客功能模块的增加</p>
+<h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:<br> <span id="more"></span></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim themes/next/_config.yml</span></span><br><span class="line">// 删除前面的注释即代表启用</span><br><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类:"></a>文章分类:</h4><p>进入刚刚生成的index.md:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/categories/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">title: categories</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>进入需要分类的文章的index.md:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 增加categories属性为Web</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags:</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h4 id="文章标签"><a href="#文章标签" class="headerlink" title="文章标签:"></a>文章标签:</h4><p>进入刚刚生成的index.md:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/tags/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>进入需要贴标签文章的index.md:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 将tags的属性为设置为Blog</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags: Blog</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h4 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面:"></a>关于页面:</h4><p>直接进入index.md编辑即可：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/about/index.md</span></span><br><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:19:30</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt; 如果再也不能见到你，祝你早安，午安，晚安。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QQ：1903585323</span><br><span class="line"></span><br><span class="line">E-mail：[1903585323@qq.com](1903585323@qq.com)</span><br><span class="line"></span><br><span class="line">个人博客：[https://master-zhoulan.github.io/](https://master-zhoulan.github.io/)</span><br><span class="line"></span><br><span class="line">CSDN：[https://i.csdn.net/<span class="comment">#/user-center/profile](https://i.csdn.net/#/user-center/profile)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>KMP</title>
+    <url>/2022/02/19/KMP/</url>
+    <content><![CDATA[<p>题目:<br>KMP<br> <span id="more"></span></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">给定一个字符串 S，以及一个模式串 P，所有字符串中只包含大小写英文字母以及阿拉伯数字。</span><br><span class="line"></span><br><span class="line">模式串 P</span><br><span class="line"> 在字符串 S</span><br><span class="line"> 中多次作为子串出现。</span><br><span class="line"></span><br><span class="line">求出模式串 P</span><br><span class="line"> 在字符串 S</span><br><span class="line"> 中所有出现的位置的起始下标。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行输入整数 N</span><br><span class="line">，表示字符串 P</span><br><span class="line"> 的长度。</span><br><span class="line"></span><br><span class="line">第二行输入字符串 P</span><br><span class="line">。</span><br><span class="line"></span><br><span class="line">第三行输入整数 M</span><br><span class="line">，表示字符串 S</span><br><span class="line"> 的长度。</span><br><span class="line"></span><br><span class="line">第四行输入字符串 S</span><br><span class="line">。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">共一行，输出所有出现位置的起始下标（下标从 0</span><br><span class="line"> 开始计数），整数之间用空格隔开。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤N≤105</span><br><span class="line"></span><br><span class="line">1≤M≤106</span><br><span class="line">输入样例：</span><br><span class="line">3</span><br><span class="line">aba</span><br><span class="line">5</span><br><span class="line">ababa</span><br><span class="line">输出样例：</span><br><span class="line">0 2</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">const int N = 1000010;</span><br><span class="line">char p[N], s[N]; // 用 p 来匹配 s</span><br><span class="line">// “next” 数组，若第 i 位存储值为 k</span><br><span class="line">// 说明 p[0...i] 内最长相等前后缀的前缀的最后一位下标为 k</span><br><span class="line">// 即 p[0...k] == p[i-k...i]</span><br><span class="line">int ne[N]; </span><br><span class="line">int n, m; // n 是模板串长度 m 是模式串长度</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; p &gt;&gt; m &gt;&gt; s;</span><br><span class="line"></span><br><span class="line">    // p[0...0] 的区间内一定没有相等前后缀</span><br><span class="line">    ne[0] = -1;</span><br><span class="line"></span><br><span class="line">    // 构造模板串的 next 数组</span><br><span class="line">    <span class="keyword">for</span> (int i = 1, j = -1; i &lt; n; i ++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span> (j != -1 &amp;&amp; p[i] != p[j + 1])</span><br><span class="line">        &#123;</span><br><span class="line">            // 若前后缀匹配不成功</span><br><span class="line">            // 反复令 j 回退，直至到 -1 或是 s[i] == s[j + 1]</span><br><span class="line">            j = ne[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (p[i] == p[j + 1]) </span><br><span class="line">        &#123;</span><br><span class="line">            j ++; // 匹配成功时，最长相等前后缀变长，最长相等前后缀前缀的最后一位变大</span><br><span class="line">        &#125;</span><br><span class="line">        ne[i] = j; // 令 ne[i] = j，以方便计算 next[i + 1]</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // kmp start !</span><br><span class="line">    <span class="keyword">for</span> (int i = 0, j = -1; i &lt; m; i ++)</span><br><span class="line">    &#123;</span><br><span class="line">       <span class="keyword">while</span> (j != -1 &amp;&amp; s[i] != p[j + 1])</span><br><span class="line">       &#123;</span><br><span class="line">           j = ne[j];</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">if</span> (s[i] == p[j + 1])</span><br><span class="line">       &#123;</span><br><span class="line">           j ++; // 匹配成功时，模板串指向下一位</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">if</span> (j == n - 1) // 模板串匹配完成，第一个匹配字符下标为 0，故到 n - 1</span><br><span class="line">       &#123;</span><br><span class="line">           // 匹配成功时，文本串结束位置减去模式串长度即为起始位置</span><br><span class="line">           cout &lt;&lt; <span class="string">i - j &lt;&lt; &#x27; &#x27;;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">           // 模板串在模式串中出现的位置可能是重叠的</span></span><br><span class="line"><span class="string">           // 需要让 j 回退到一定位置，再让 i</span> 加 1 继续进行比较</span><br><span class="line">           // 回退到 ne[j] 可以保证 j 最大，即已经成功匹配的部分最长</span><br><span class="line">           j = ne[j]; </span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>KMP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/01/17/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><span id="more"></span>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown进阶</title>
+    <url>/2022/01/19/Markdown2/</url>
+    <content><![CDATA[<p>好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：<br> <span id="more"></span></p>
+<h4 id="1）模板设置"><a href="#1）模板设置" class="headerlink" title="(1）模板设置"></a>(1）模板设置</h4><p>当我们使用命令hexo new “title” 去创建我们的文章时，Hexo 会根据 &#x2F;scaffolds&#x2F;post.md 文件对新建文件进行初始化，换言之，&#x2F;scaffolds&#x2F;post.md 文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; tiltle &#125;&#125;</span><br><span class="line"><span class="built_in">date</span>: &#123;&#123; <span class="built_in">date</span> &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure>
+
+<h4 id="2）头部设置"><a href="#2）头部设置" class="headerlink" title="(2）头部设置"></a>(2）头部设置</h4><p>在每一篇博客文章的开头都会有对文章的说明文字，叫做 文章头部，文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以对文章添加标签、分类等，一个简单的示例如下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: Title</span><br><span class="line"><span class="built_in">date</span>: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tags1, tags2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
+<h4 id="3）首页显示"><a href="#3）首页显示" class="headerlink" title="(3）首页显示"></a>(3）首页显示</h4><p>在 Hexo 框架搭建的博客网站首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+<p>标志，表示只会显示标志前面的内容</p>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Trie字符串统计</title>
+    <url>/2022/02/20/Trie%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/</url>
+    <content><![CDATA[<p>题目<br>Trie字符串统计<br> <span id="more"></span></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">维护一个字符串集合，支持两种操作：</span><br><span class="line"></span><br><span class="line">I x 向集合中插入一个字符串 x</span><br><span class="line">；</span><br><span class="line">Q x 询问一个字符串在集合中出现了多少次。</span><br><span class="line">共有 N</span><br><span class="line">个操作，所有输入的字符串总长度不超过 105</span><br><span class="line">，字符串仅包含小写英文字母。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行包含整数 N</span><br><span class="line">，表示操作数。</span><br><span class="line"></span><br><span class="line">接下来 N</span><br><span class="line">行，每行包含一个操作指令，指令为 I x 或 Q x 中的一种。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">对于每个询问指令 Q x，都要输出一个整数作为结果，表示 x</span><br><span class="line">在集合中出现的次数。</span><br><span class="line"></span><br><span class="line">每个结果占一行。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line"></span><br><span class="line">1≤N≤2∗104</span><br><span class="line"></span><br><span class="line">输入样例：</span><br><span class="line"></span><br><span class="line">5</span><br><span class="line">I abc</span><br><span class="line">Q abc</span><br><span class="line">Q ab</span><br><span class="line">I ab</span><br><span class="line">Q ab</span><br><span class="line"></span><br><span class="line">输出样例：</span><br><span class="line">1</span><br><span class="line">0</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+<p>题解</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">const int N = 100010;</span><br><span class="line">int son[N][26],cnt[N],idx;//cnt表示出现的次数 idx是trie的节点</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">char str[N];</span><br><span class="line"></span><br><span class="line">void insert(char str[])</span><br><span class="line">&#123;</span><br><span class="line">    int p = 0;</span><br><span class="line">    <span class="keyword">for</span>(int i = 0;str[i];i++)</span><br><span class="line">    &#123;</span><br><span class="line">        int u = str[i] - <span class="string">&#x27;a&#x27;</span>; </span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) son[p][u] = ++idx;  //没有该子结点就创建一个</span><br><span class="line">        p = son[p][u]; //走到p的子结点，理解为链表指向下一个节点</span><br><span class="line">    &#125;</span><br><span class="line">    cnt[p]++;</span><br><span class="line">&#125;</span><br><span class="line">//重新遍历一遍 如果路径不通就返回0</span><br><span class="line">int query(char str[])</span><br><span class="line">&#123;</span><br><span class="line">    int p = 0;</span><br><span class="line">    <span class="keyword">for</span>(int i = 0;str[i];i++)</span><br><span class="line">    &#123;</span><br><span class="line">        int u = str[i] - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) <span class="built_in">return</span> 0;</span><br><span class="line">        p = son[p][u];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> cnt[p];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">while</span>(n--)</span><br><span class="line">    &#123;</span><br><span class="line">        char op[2];</span><br><span class="line">        scanf(<span class="string">&quot;%s%s&quot;</span>,op,str);</span><br><span class="line">        <span class="keyword">if</span>(op[0] == <span class="string">&#x27;I&#x27;</span>) insert(str);</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,query(str));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>Trie</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>合并集合</title>
+    <url>/2024/02/23/%E5%90%88%E5%B9%B6%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<p>题目：合并集合<br> <span id="more"></span></p>
+<figure class="highlight plaintext"><figcaption><span>js</span></figcaption><table><tr><td class="code"><pre><span class="line">一共有 n</span><br><span class="line"> 个数，编号是 1∼n</span><br><span class="line">，最开始每个数各自在一个集合中。</span><br><span class="line"></span><br><span class="line">现在要进行 m</span><br><span class="line"> 个操作，操作共有两种：</span><br><span class="line"></span><br><span class="line">M a b，将编号为 a</span><br><span class="line"> 和 b</span><br><span class="line"> 的两个数所在的集合合并，如果两个数已经在同一个集合中，则忽略这个操作；</span><br><span class="line">Q a b，询问编号为 a</span><br><span class="line"> 和 b</span><br><span class="line"> 的两个数是否在同一个集合中；</span><br><span class="line">输入格式</span><br><span class="line">第一行输入整数 n</span><br><span class="line"> 和 m</span><br><span class="line">。</span><br><span class="line"></span><br><span class="line">接下来 m</span><br><span class="line"> 行，每行包含一个操作指令，指令为 M a b 或 Q a b 中的一种。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">对于每个询问指令 Q a b，都要输出一个结果，如果 a</span><br><span class="line"> 和 b</span><br><span class="line"> 在同一集合内，则输出 Yes，否则输出 No。</span><br><span class="line"></span><br><span class="line">每个结果占一行。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤n,m≤105</span><br><span class="line">输入样例：</span><br><span class="line">4 5</span><br><span class="line">M 1 2</span><br><span class="line">M 3 4</span><br><span class="line">Q 1 2</span><br><span class="line">Q 1 3</span><br><span class="line">Q 3 4</span><br><span class="line">输出样例：</span><br><span class="line">Yes</span><br><span class="line">No</span><br><span class="line">Yes</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">并查集：</span><br><span class="line">1.将两个集合合并</span><br><span class="line">2.询问两个元素是否在一个集合当中</span><br><span class="line"></span><br><span class="line">基本原理：每个集合用一棵树来表示。树根的编号就是整个集合的编号。</span><br><span class="line">每个节点储存它的父节点，p[x]表示x父节点</span><br><span class="line"></span><br><span class="line">问题1：如何判断树根：<span class="keyword">if</span>(p[x] == x)</span><br><span class="line">问题2：如何求想的集合编号：<span class="keyword">while</span>(p[x] != x) x = p[x];</span><br><span class="line">问题3：如何合并两个集合：px是x的集合编号，py是y的集合编号。p[x]</span><br><span class="line"> = y</span><br><span class="line"> </span><br><span class="line"> <span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line"> using namespace std;</span><br><span class="line"> const int N = 100010;</span><br><span class="line"> </span><br><span class="line"> int n,m;</span><br><span class="line"> int p[x];</span><br><span class="line"> </span><br><span class="line"> int find(int x)  //利用递归查找根节点</span><br><span class="line"> &#123;</span><br><span class="line">   <span class="keyword">if</span>(p[x] != x) p[x] = find(p[x]); </span><br><span class="line">   <span class="built_in">return</span> p[x];</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> int <span class="function"><span class="title">main</span></span>()</span><br><span class="line"> &#123;</span><br><span class="line">   scanf(<span class="string">&quot;%d%d&quot;</span>,&amp;n,&amp;m);</span><br><span class="line">   <span class="keyword">for</span>(int i = 0;i &lt; n;i++) p[i] = i;</span><br><span class="line">   <span class="keyword">while</span>(m--)</span><br><span class="line">   &#123;</span><br><span class="line">     char op[2];</span><br><span class="line">     int a,b;</span><br><span class="line">     scanf(<span class="string">&quot;%d%d&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">     <span class="keyword">if</span>(op[0] == <span class="string">&#x27;M&#x27;</span>)</span><br><span class="line">     &#123;</span><br><span class="line">       p[find[a]] = find(b);</span><br><span class="line">      &#125;  </span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span>(find(a) == find(b))</span><br><span class="line">        puts(<span class="string">&quot;yes&quot;</span>);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        puts(<span class="string">&quot;no&quot;</span>);</span><br><span class="line"></span><br><span class="line">&#125;&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>并查集</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown语法</title>
     <url>/2022/01/18/my-first-blog/</url>
     <content><![CDATA[<p>在了解Markdown 语法之前，博主十分强烈推荐csdn编辑器markdown,十分方便好用，还可以实时预览，如果有更好的编辑器可以推荐给我哦~</p>
@@ -37,45 +155,6 @@
       </tags>
   </entry>
   <entry>
-    <title>合并集合</title>
-    <url>/2024/02/23/%E5%90%88%E5%B9%B6%E9%9B%86%E5%90%88/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><figcaption><span>js</span></figcaption><table><tr><td class="code"><pre><span class="line">一共有 n</span><br><span class="line"> 个数，编号是 1∼n</span><br><span class="line">，最开始每个数各自在一个集合中。</span><br><span class="line"></span><br><span class="line">现在要进行 m</span><br><span class="line"> 个操作，操作共有两种：</span><br><span class="line"></span><br><span class="line">M a b，将编号为 a</span><br><span class="line"> 和 b</span><br><span class="line"> 的两个数所在的集合合并，如果两个数已经在同一个集合中，则忽略这个操作；</span><br><span class="line">Q a b，询问编号为 a</span><br><span class="line"> 和 b</span><br><span class="line"> 的两个数是否在同一个集合中；</span><br><span class="line">输入格式</span><br><span class="line">第一行输入整数 n</span><br><span class="line"> 和 m</span><br><span class="line">。</span><br><span class="line"></span><br><span class="line">接下来 m</span><br><span class="line"> 行，每行包含一个操作指令，指令为 M a b 或 Q a b 中的一种。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">对于每个询问指令 Q a b，都要输出一个结果，如果 a</span><br><span class="line"> 和 b</span><br><span class="line"> 在同一集合内，则输出 Yes，否则输出 No。</span><br><span class="line"></span><br><span class="line">每个结果占一行。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤n,m≤105</span><br><span class="line">输入样例：</span><br><span class="line">4 5</span><br><span class="line">M 1 2</span><br><span class="line">M 3 4</span><br><span class="line">Q 1 2</span><br><span class="line">Q 1 3</span><br><span class="line">Q 3 4</span><br><span class="line">输出样例：</span><br><span class="line">Yes</span><br><span class="line">No</span><br><span class="line">Yes</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">并查集：</span><br><span class="line">1.将两个集合合并</span><br><span class="line">2.询问两个元素是否在一个集合当中</span><br><span class="line"></span><br><span class="line">基本原理：每个集合用一棵树来表示。树根的编号就是整个集合的编号。</span><br><span class="line">每个节点储存它的父节点，p[x]表示x父节点</span><br><span class="line"></span><br><span class="line">问题1：如何判断树根：<span class="keyword">if</span>(p[x] == x)</span><br><span class="line">问题2：如何求想的集合编号：<span class="keyword">while</span>(p[x] != x) x = p[x];</span><br><span class="line">问题3：如何合并两个集合：px是x的集合编号，py是y的集合编号。p[x]</span><br><span class="line"> = y</span><br><span class="line"> </span><br><span class="line"> <span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line"> using namespace std;</span><br><span class="line"> const int N = 100010;</span><br><span class="line"> </span><br><span class="line"> int n,m;</span><br><span class="line"> int p[x];</span><br><span class="line"> </span><br><span class="line"> int find(int x)  //利用递归查找根节点</span><br><span class="line"> &#123;</span><br><span class="line">   <span class="keyword">if</span>(p[x] != x) p[x] = find(p[x]); </span><br><span class="line">   <span class="built_in">return</span> p[x];</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> int <span class="function"><span class="title">main</span></span>()</span><br><span class="line"> &#123;</span><br><span class="line">   scanf(<span class="string">&quot;%d%d&quot;</span>,&amp;n,&amp;m);</span><br><span class="line">   <span class="keyword">for</span>(int i = 0;i &lt; n;i++) p[i] = i;</span><br><span class="line">   <span class="keyword">while</span>(m--)</span><br><span class="line">   &#123;</span><br><span class="line">     char op[2];</span><br><span class="line">     int a,b;</span><br><span class="line">     scanf(<span class="string">&quot;%d%d&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">     <span class="keyword">if</span>(op[0] == <span class="string">&#x27;M&#x27;</span>)</span><br><span class="line">     &#123;</span><br><span class="line">       p[find[a]] = find(b);</span><br><span class="line">      &#125;  </span><br><span class="line">      <span class="keyword">else</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span>(find(a) == find(b))</span><br><span class="line">        puts(<span class="string">&quot;yes&quot;</span>);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        puts(<span class="string">&quot;no&quot;</span>);</span><br><span class="line"></span><br><span class="line">&#125;&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>并查集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/01/17/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><span id="more"></span>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>最大异或对</title>
     <url>/2022/02/21/%E6%9C%80%E5%A4%A7%E5%BC%82%E6%88%96%E5%AF%B9/</url>
     <content><![CDATA[<p>题目：最大异或对<br> <span id="more"></span></p>
@@ -89,35 +168,6 @@
       <tags>
         <tag>C++</tag>
         <tag>Trie</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Trie字符串统计</title>
-    <url>/2022/02/20/Trie%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BB%9F%E8%AE%A1/</url>
-    <content><![CDATA[<p>题目<br>Trie字符串统计<br> <span id="more"></span></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">维护一个字符串集合，支持两种操作：</span><br><span class="line"></span><br><span class="line">I x 向集合中插入一个字符串 x</span><br><span class="line">；</span><br><span class="line">Q x 询问一个字符串在集合中出现了多少次。</span><br><span class="line">共有 N</span><br><span class="line">个操作，所有输入的字符串总长度不超过 105</span><br><span class="line">，字符串仅包含小写英文字母。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行包含整数 N</span><br><span class="line">，表示操作数。</span><br><span class="line"></span><br><span class="line">接下来 N</span><br><span class="line">行，每行包含一个操作指令，指令为 I x 或 Q x 中的一种。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">对于每个询问指令 Q x，都要输出一个整数作为结果，表示 x</span><br><span class="line">在集合中出现的次数。</span><br><span class="line"></span><br><span class="line">每个结果占一行。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line"></span><br><span class="line">1≤N≤2∗104</span><br><span class="line"></span><br><span class="line">输入样例：</span><br><span class="line"></span><br><span class="line">5</span><br><span class="line">I abc</span><br><span class="line">Q abc</span><br><span class="line">Q ab</span><br><span class="line">I ab</span><br><span class="line">Q ab</span><br><span class="line"></span><br><span class="line">输出样例：</span><br><span class="line">1</span><br><span class="line">0</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
-<p>题解</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">const int N = 100010;</span><br><span class="line">int son[N][26],cnt[N],idx;//cnt表示出现的次数 idx是trie的节点</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">char str[N];</span><br><span class="line"></span><br><span class="line">void insert(char str[])</span><br><span class="line">&#123;</span><br><span class="line">    int p = 0;</span><br><span class="line">    <span class="keyword">for</span>(int i = 0;str[i];i++)</span><br><span class="line">    &#123;</span><br><span class="line">        int u = str[i] - <span class="string">&#x27;a&#x27;</span>; </span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) son[p][u] = ++idx;  //没有该子结点就创建一个</span><br><span class="line">        p = son[p][u]; //走到p的子结点，理解为链表指向下一个节点</span><br><span class="line">    &#125;</span><br><span class="line">    cnt[p]++;</span><br><span class="line">&#125;</span><br><span class="line">//重新遍历一遍 如果路径不通就返回0</span><br><span class="line">int query(char str[])</span><br><span class="line">&#123;</span><br><span class="line">    int p = 0;</span><br><span class="line">    <span class="keyword">for</span>(int i = 0;str[i];i++)</span><br><span class="line">    &#123;</span><br><span class="line">        int u = str[i] - <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">        <span class="keyword">if</span>(!son[p][u]) <span class="built_in">return</span> 0;</span><br><span class="line">        p = son[p][u];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> cnt[p];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int n;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">while</span>(n--)</span><br><span class="line">    &#123;</span><br><span class="line">        char op[2];</span><br><span class="line">        scanf(<span class="string">&quot;%s%s&quot;</span>,op,str);</span><br><span class="line">        <span class="keyword">if</span>(op[0] == <span class="string">&#x27;I&#x27;</span>) insert(str);</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,query(str));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>Trie</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>KMP</title>
-    <url>/2022/02/19/KMP/</url>
-    <content><![CDATA[<p>题目:<br>KMP<br> <span id="more"></span></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">给定一个字符串 S，以及一个模式串 P，所有字符串中只包含大小写英文字母以及阿拉伯数字。</span><br><span class="line"></span><br><span class="line">模式串 P</span><br><span class="line"> 在字符串 S</span><br><span class="line"> 中多次作为子串出现。</span><br><span class="line"></span><br><span class="line">求出模式串 P</span><br><span class="line"> 在字符串 S</span><br><span class="line"> 中所有出现的位置的起始下标。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行输入整数 N</span><br><span class="line">，表示字符串 P</span><br><span class="line"> 的长度。</span><br><span class="line"></span><br><span class="line">第二行输入字符串 P</span><br><span class="line">。</span><br><span class="line"></span><br><span class="line">第三行输入整数 M</span><br><span class="line">，表示字符串 S</span><br><span class="line"> 的长度。</span><br><span class="line"></span><br><span class="line">第四行输入字符串 S</span><br><span class="line">。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">共一行，输出所有出现位置的起始下标（下标从 0</span><br><span class="line"> 开始计数），整数之间用空格隔开。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤N≤105</span><br><span class="line"></span><br><span class="line">1≤M≤106</span><br><span class="line">输入样例：</span><br><span class="line">3</span><br><span class="line">aba</span><br><span class="line">5</span><br><span class="line">ababa</span><br><span class="line">输出样例：</span><br><span class="line">0 2</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#include &lt;iostream&gt;</span></span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">const int N = 1000010;</span><br><span class="line">char p[N], s[N]; // 用 p 来匹配 s</span><br><span class="line">// “next” 数组，若第 i 位存储值为 k</span><br><span class="line">// 说明 p[0...i] 内最长相等前后缀的前缀的最后一位下标为 k</span><br><span class="line">// 即 p[0...k] == p[i-k...i]</span><br><span class="line">int ne[N]; </span><br><span class="line">int n, m; // n 是模板串长度 m 是模式串长度</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; p &gt;&gt; m &gt;&gt; s;</span><br><span class="line"></span><br><span class="line">    // p[0...0] 的区间内一定没有相等前后缀</span><br><span class="line">    ne[0] = -1;</span><br><span class="line"></span><br><span class="line">    // 构造模板串的 next 数组</span><br><span class="line">    <span class="keyword">for</span> (int i = 1, j = -1; i &lt; n; i ++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span> (j != -1 &amp;&amp; p[i] != p[j + 1])</span><br><span class="line">        &#123;</span><br><span class="line">            // 若前后缀匹配不成功</span><br><span class="line">            // 反复令 j 回退，直至到 -1 或是 s[i] == s[j + 1]</span><br><span class="line">            j = ne[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (p[i] == p[j + 1]) </span><br><span class="line">        &#123;</span><br><span class="line">            j ++; // 匹配成功时，最长相等前后缀变长，最长相等前后缀前缀的最后一位变大</span><br><span class="line">        &#125;</span><br><span class="line">        ne[i] = j; // 令 ne[i] = j，以方便计算 next[i + 1]</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // kmp start !</span><br><span class="line">    <span class="keyword">for</span> (int i = 0, j = -1; i &lt; m; i ++)</span><br><span class="line">    &#123;</span><br><span class="line">       <span class="keyword">while</span> (j != -1 &amp;&amp; s[i] != p[j + 1])</span><br><span class="line">       &#123;</span><br><span class="line">           j = ne[j];</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">if</span> (s[i] == p[j + 1])</span><br><span class="line">       &#123;</span><br><span class="line">           j ++; // 匹配成功时，模板串指向下一位</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">if</span> (j == n - 1) // 模板串匹配完成，第一个匹配字符下标为 0，故到 n - 1</span><br><span class="line">       &#123;</span><br><span class="line">           // 匹配成功时，文本串结束位置减去模式串长度即为起始位置</span><br><span class="line">           cout &lt;&lt; <span class="string">i - j &lt;&lt; &#x27; &#x27;;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">           // 模板串在模式串中出现的位置可能是重叠的</span></span><br><span class="line"><span class="string">           // 需要让 j 回退到一定位置，再让 i</span> 加 1 继续进行比较</span><br><span class="line">           // 回退到 ne[j] 可以保证 j 最大，即已经成功匹配的部分最长</span><br><span class="line">           j = ne[j]; </span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   <span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>KMP</tag>
       </tags>
   </entry>
   <entry>
@@ -136,52 +186,11 @@
       </tags>
   </entry>
   <entry>
-    <title>HexoNext分类标签</title>
-    <url>/2022/02/02/HexoNext%E5%88%86%E7%B1%BB%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<p>HexoNext主题下分类标签：博客功能模块的增加</p>
-<h4 id="主页功能块"><a href="#主页功能块" class="headerlink" title="主页功能块:"></a>主页功能块:</h4><p>编辑hexo项目下主题配置文件:<br> <span id="more"></span></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim themes/next/_config.yml</span></span><br><span class="line">// 删除前面的注释即代表启用</span><br><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line">  about: /about/ || fa fa-user</span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || fa fa-heartbeat</span></span><br></pre></td></tr></table></figure>
+    <title>食物链</title>
+    <url>/2024/02/26/%E9%A3%9F%E7%89%A9%E9%93%BE/</url>
+    <content><![CDATA[<p>题目：食物链<br> <span id="more"></span></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。</span><br><span class="line">A吃B，B吃C,C吃A。</span><br><span class="line"></span><br><span class="line">现有 N个动物，以 1∼N编号。</span><br><span class="line"></span><br><span class="line">每个动物都是 A,B,C中的一种，但是我们并不知道它到底是哪一种。</span><br><span class="line"></span><br><span class="line">有人用两种说法对这 N 个动物所构成的食物链关系进行描述：</span><br><span class="line"></span><br><span class="line">第一种说法是 1 X Y，表示 X和Y是同类。</span><br><span class="line"></span><br><span class="line">第二种说法是 2 X Y，表示 X 吃 Y。</span><br><span class="line"></span><br><span class="line">此人对 N 个动物，用上述两种说法，一句接一句地说出 K句话，这 K 句话有的是真的，有的是假的。</span><br><span class="line"></span><br><span class="line">当一句话满足下列三条之一时，这句话就是假话，否则就是真话。</span><br><span class="line"></span><br><span class="line">当前的话与前面的某些真的话冲突，就是假话；</span><br><span class="line">当前的话中 X 或 Y 比 N大，就是假话；</span><br><span class="line">当前的话表示 X 吃 X，就是假话。</span><br><span class="line">你的任务是根据给定的 N 和 K 句话，输出假话的总数。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行是两个整数 N</span><br><span class="line"> 和 K，以一个空格分隔。</span><br><span class="line"></span><br><span class="line">以下 K 行每行是三个正整数 D，X，Y，两数之间用一个空格隔开，其中 D 表示说法的种类。</span><br><span class="line"></span><br><span class="line">若 D=1，则表示 X 和 Y 是同类。</span><br><span class="line"></span><br><span class="line">若 D=2，则表示 X 吃 Y。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">只有一个整数，表示假话的数目。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤N≤50000,</span><br><span class="line">0≤K≤100000</span><br><span class="line">输入样例：</span><br><span class="line">100 7</span><br><span class="line">1 101 1 </span><br><span class="line">2 1 2</span><br><span class="line">2 2 3 </span><br><span class="line">2 3 3 </span><br><span class="line">1 1 3 </span><br><span class="line">2 3 1 </span><br><span class="line">1 5 5</span><br><span class="line">输出样例：</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
 
-<h4 id="文章分类"><a href="#文章分类" class="headerlink" title="文章分类:"></a>文章分类:</h4><p>进入刚刚生成的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/categories/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">title: categories</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;categories&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>进入需要分类的文章的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 增加categories属性为Web</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags:</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h4 id="文章标签"><a href="#文章标签" class="headerlink" title="文章标签:"></a>文章标签:</h4><p>进入刚刚生成的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/tags/index.md</span></span><br><span class="line">// 增加<span class="built_in">type</span>属性</span><br><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:08:39</span><br><span class="line"><span class="built_in">type</span>: <span class="string">&quot;tags&quot;</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>进入需要贴标签文章的index.md:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/_posts/Blog.md</span></span><br><span class="line">// 将tags的属性为设置为Blog</span><br><span class="line">---</span><br><span class="line">title: Blog搭建</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 19:06:24</span><br><span class="line">tags: Blog</span><br><span class="line">categories: Web</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h4 id="关于页面"><a href="#关于页面" class="headerlink" title="关于页面:"></a>关于页面:</h4><p>直接进入index.md编辑即可：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># vim source/about/index.md</span></span><br><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line"><span class="built_in">date</span>: 2020-09-26 20:19:30</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt; 如果再也不能见到你，祝你早安，午安，晚安。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QQ：1903585323</span><br><span class="line"></span><br><span class="line">E-mail：[1903585323@qq.com](1903585323@qq.com)</span><br><span class="line"></span><br><span class="line">个人博客：[https://master-zhoulan.github.io/](https://master-zhoulan.github.io/)</span><br><span class="line"></span><br><span class="line">CSDN：[https://i.csdn.net/<span class="comment">#/user-center/profile](https://i.csdn.net/#/user-center/profile)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Markdown进阶</title>
-    <url>/2022/01/19/Markdown2/</url>
-    <content><![CDATA[<p>好了，常用的 Markdown 语法至此我们已经基本学习完毕了,然后我们就可 以根据这些语法去书写我们的博客内容啦,下面再提供几个比较高级的玩法：<br> <span id="more"></span></p>
-<h4 id="1）模板设置"><a href="#1）模板设置" class="headerlink" title="(1）模板设置"></a>(1）模板设置</h4><p>当我们使用命令hexo new “title” 去创建我们的文章时，Hexo 会根据 &#x2F;scaffolds&#x2F;post.md 文件对新建文件进行初始化，换言之，&#x2F;scaffolds&#x2F;post.md 文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; tiltle &#125;&#125;</span><br><span class="line"><span class="built_in">date</span>: &#123;&#123; <span class="built_in">date</span> &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br></pre></td></tr></table></figure>
-
-<h4 id="2）头部设置"><a href="#2）头部设置" class="headerlink" title="(2）头部设置"></a>(2）头部设置</h4><p>在每一篇博客文章的开头都会有对文章的说明文字，叫做 文章头部，文章的头部除了可以设置文章标题、发布日期等基础信息外，还可以对文章添加标签、分类等，一个简单的示例如下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: Title</span><br><span class="line"><span class="built_in">date</span>: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tags1, tags2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
-<h4 id="3）首页显示"><a href="#3）首页显示" class="headerlink" title="(3）首页显示"></a>(3）首页显示</h4><p>在 Hexo 框架搭建的博客网站首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
-<p>标志，表示只会显示标志前面的内容</p>
-]]></content>
-      <categories>
-        <category>Markdown</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-        <tag>Markdown</tag>
-      </tags>
+<figure class="highlight plaintext"><figcaption><span>js</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
