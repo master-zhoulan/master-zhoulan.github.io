@@ -31,8 +31,10 @@
 <meta property="og:description" content="题目：食物链">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-26T07:27:53.000Z">
-<meta property="article:modified_time" content="2024-02-26T07:31:20.581Z">
+<meta property="article:modified_time" content="2024-02-27T02:00:46.002Z">
 <meta property="article:author" content="master-zhoulan">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="并查集">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/2024/02/26/%E9%A3%9F%E7%89%A9%E9%93%BE/">
@@ -219,9 +221,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2024-02-26 15:27:53 / 修改时间：15:31:20" itemprop="dateCreated datePublished" datetime="2024-02-26T15:27:53+08:00">2024-02-26</time>
+              <time title="创建时间：2024-02-26 15:27:53" itemprop="dateCreated datePublished" datetime="2024-02-26T15:27:53+08:00">2024-02-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-02-27 10:00:46" itemprop="dateModified" datetime="2024-02-27T10:00:46+08:00">2024-02-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
             </span>
 
           <br>
@@ -230,14 +247,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>576</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -250,9 +267,9 @@
 
       
         <p>题目：食物链<br> <span id="more"></span></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。</span><br><span class="line">A吃B，B吃C,C吃A。</span><br><span class="line"></span><br><span class="line">现有 N个动物，以 1∼N编号。</span><br><span class="line"></span><br><span class="line">每个动物都是 A,B,C中的一种，但是我们并不知道它到底是哪一种。</span><br><span class="line"></span><br><span class="line">有人用两种说法对这 N 个动物所构成的食物链关系进行描述：</span><br><span class="line"></span><br><span class="line">第一种说法是 1 X Y，表示 X和Y是同类。</span><br><span class="line"></span><br><span class="line">第二种说法是 2 X Y，表示 X 吃 Y。</span><br><span class="line"></span><br><span class="line">此人对 N 个动物，用上述两种说法，一句接一句地说出 K句话，这 K 句话有的是真的，有的是假的。</span><br><span class="line"></span><br><span class="line">当一句话满足下列三条之一时，这句话就是假话，否则就是真话。</span><br><span class="line"></span><br><span class="line">当前的话与前面的某些真的话冲突，就是假话；</span><br><span class="line">当前的话中 X 或 Y 比 N大，就是假话；</span><br><span class="line">当前的话表示 X 吃 X，就是假话。</span><br><span class="line">你的任务是根据给定的 N 和 K 句话，输出假话的总数。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行是两个整数 N</span><br><span class="line"> 和 K，以一个空格分隔。</span><br><span class="line"></span><br><span class="line">以下 K 行每行是三个正整数 D，X，Y，两数之间用一个空格隔开，其中 D 表示说法的种类。</span><br><span class="line"></span><br><span class="line">若 D=1，则表示 X 和 Y 是同类。</span><br><span class="line"></span><br><span class="line">若 D=2，则表示 X 吃 Y。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">只有一个整数，表示假话的数目。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤N≤50000,</span><br><span class="line">0≤K≤100000</span><br><span class="line">输入样例：</span><br><span class="line">100 7</span><br><span class="line">1 101 1 </span><br><span class="line">2 1 2</span><br><span class="line">2 2 3 </span><br><span class="line">2 3 3 </span><br><span class="line">1 1 3 </span><br><span class="line">2 3 1 </span><br><span class="line">1 5 5</span><br><span class="line">输出样例：</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。</span><br><span class="line">A吃B，B吃C,C吃A。</span><br><span class="line"></span><br><span class="line">现有 N个动物，以 1∼N编号。</span><br><span class="line"></span><br><span class="line">每个动物都是 A,B,C中的一种，但是我们并不知道它到底是哪一种。</span><br><span class="line"></span><br><span class="line">有人用两种说法对这 N 个动物所构成的食物链关系进行描述：</span><br><span class="line"></span><br><span class="line">第一种说法是 1 X Y，表示 X和Y是同类。</span><br><span class="line"></span><br><span class="line">第二种说法是 2 X Y，表示 X 吃 Y。</span><br><span class="line"></span><br><span class="line">此人对 N 个动物，用上述两种说法，一句接一句地说出 K句话，这 K 句话有的是真的，有的是假的。</span><br><span class="line"></span><br><span class="line">当一句话满足下列三条之一时，这句话就是假话，否则就是真话。</span><br><span class="line"></span><br><span class="line">当前的话与前面的某些真的话冲突，就是假话；</span><br><span class="line">当前的话中 X 或 Y 比 N大，就是假话；</span><br><span class="line">当前的话表示 X 吃 X，就是假话。</span><br><span class="line">你的任务是根据给定的 N 和 K 句话，输出假话的总数。</span><br><span class="line"></span><br><span class="line">输入格式</span><br><span class="line">第一行是两个整数 N 和 K，以一个空格分隔。</span><br><span class="line"></span><br><span class="line">以下 K 行每行是三个正整数 D，X，Y，两数之间用一个空格隔开，其中 D 表示说法的种类。</span><br><span class="line"></span><br><span class="line">若 D=1，则表示 X 和 Y 是同类。</span><br><span class="line"></span><br><span class="line">若 D=2，则表示 X 吃 Y。</span><br><span class="line"></span><br><span class="line">输出格式</span><br><span class="line">只有一个整数，表示假话的数目。</span><br><span class="line"></span><br><span class="line">数据范围</span><br><span class="line">1≤N≤50000,</span><br><span class="line">0≤K≤100000</span><br><span class="line">输入样例：</span><br><span class="line">100 7</span><br><span class="line">1 101 1 </span><br><span class="line">2 1 2</span><br><span class="line">2 2 3 </span><br><span class="line">2 3 3 </span><br><span class="line">1 1 3 </span><br><span class="line">2 3 1 </span><br><span class="line">1 5 5</span><br><span class="line">输出样例：</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">//用并查集来维护额外信息：d[]</span><br><span class="line">//此外在运用“并查集”解题时要注意：并查集中每个集合时一个树的形式</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">const int N=5*1e4+10;</span><br><span class="line">int n,m;</span><br><span class="line">//father数组，辅助数组-维护i节点到根节点的距离（因为初始每个节点都为根节点，所以距离初始都为0 ）</span><br><span class="line">int p[N],d[N];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//路径的长度（高度），是需要自上而下加起来的，从根节点往下走,所以要先调用递归</span><br><span class="line">int find(int x)&#123;</span><br><span class="line">    if(p[x]!=x)&#123;</span><br><span class="line">        int t=find(p[x]);//t暂时存p[x]“根”节点</span><br><span class="line">        d[x]+=d[p[x]]; //find之后，p[x]存放p[x]到根节点之间的距离了；原d[x]为x到父节点之间的距离</span><br><span class="line">        //路劲压缩优化</span><br><span class="line">        p[x]=t; </span><br><span class="line">    &#125;</span><br><span class="line">    return p[x];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//此题：</span><br><span class="line">//不管是否为同类还是异类，都把他放在同一集合中 ，即：只要知道了两个动物的关系就把他们放在集合里面去。这样，就可以间接得出各动物之间的关系</span><br><span class="line">//核心：如何确定每个点之间的关系？=》如何确定每个点与根节点之间的关系？</span><br><span class="line">//通过到根节点模上3的距离来判断：1表示可以吃根节点，2表示被根节点吃，3表示与根节点是同类</span><br><span class="line">int main()&#123;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line"></span><br><span class="line">    for(int i=1;i&lt;=n;i++)</span><br><span class="line">        p[i]=i;</span><br><span class="line"></span><br><span class="line">    int res=0;</span><br><span class="line">    while(m--)&#123;</span><br><span class="line">        int r,x,y; //r标识说法的种类</span><br><span class="line">        cin&gt;&gt;r&gt;&gt;x&gt;&gt;y;</span><br><span class="line"></span><br><span class="line">        if(x&gt;n||y&gt;n)  //三大“假条件”之二</span><br><span class="line">            res++; </span><br><span class="line">        else&#123;</span><br><span class="line">            int px=find(x),py=find(y); //px和py都是根节点</span><br><span class="line">            //r=1表示x和y是同类</span><br><span class="line">            if(r==1)&#123;</span><br><span class="line">                //px==py说明x和y已经在同一颗树上了</span><br><span class="line">                //x和y若是同一种类，则他们到根节点的距离模3应该相等</span><br><span class="line">                if(px==py &amp;&amp; (d[x]-d[y])%3) res++;</span><br><span class="line">                else if(px!=py)&#123;</span><br><span class="line">                    //让x的祖宗节点指向y的祖宗节点</span><br><span class="line">                    p[px]=py;</span><br><span class="line">                    //定义px到py之间的距离：因为x和y是同类，所以x合并到y的集合中后，(d[x]+?)%3==d[y]%3 =&gt; d[y]-d[x]=?,其中？为x的祖宗节点px到y的祖宗节点的距离</span><br><span class="line">                    d[px]=d[y]-d[x];</span><br><span class="line">                &#125;</span><br><span class="line">            //r=2表示x吃y</span><br><span class="line">            // =》x到根节点的距离比y到根节点的距离多1 =》(d[x]-d[y]-1)%3==0</span><br><span class="line">            &#125;else if(r==2)&#123;</span><br><span class="line">                if(px==py &amp;&amp; (d[x]-d[y]-1)%3) res++;</span><br><span class="line">                else if(px!=py)&#123;  //x和y不在同一集合中</span><br><span class="line">                    p[px]=py;</span><br><span class="line">                    //因为x吃y，所以d[x]+?-d[y]-1==0 =&gt; ?=d[y]+1-d[x],其中？为d[px]</span><br><span class="line">                    d[px]=d[y]+1-d[x];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;res;</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -260,6 +277,10 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/" rel="tag"># 并查集</a>
+          </div>
 
         
 
@@ -270,7 +291,10 @@
     <a href="/2024/02/23/%E5%90%88%E5%B9%B6%E9%9B%86%E5%90%88/" rel="prev" title="合并集合">
       <i class="fa fa-chevron-left"></i> 合并集合
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2024/02/27/%E5%A0%86%E6%8E%92%E5%BA%8F/" rel="next" title="堆排序">
+      堆排序 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -353,7 +377,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -366,7 +390,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -410,12 +434,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">9 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
 </div>
 
         
