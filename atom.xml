@@ -310,9 +310,9 @@
     <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
     
     
-    <category term="blog" scheme="http://example.com/tags/blog/"/>
-    
     <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
+    
+    <category term="blog" scheme="http://example.com/tags/blog/"/>
     
   </entry>
   
@@ -332,9 +332,9 @@
     <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
     
     
-    <category term="blog" scheme="http://example.com/tags/blog/"/>
-    
     <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
+    
+    <category term="blog" scheme="http://example.com/tags/blog/"/>
     
   </entry>
   
